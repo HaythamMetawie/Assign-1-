@@ -3,7 +3,9 @@
 رقم الجلوس:33854
 
 1.	What is a class?
+
 -	A class is a C++ vehicle for translating an abstraction to a user-defined type. It combines data representation and methods for manipulating that data into one neat package.
+
 2.	How does a class accomplish abstraction, encapsulation, and data hiding? 
 -	Abstraction is accomplished by creating the user's defined data types using the class construct and defining the variables.
 -	Encapsulation is accomplished by gathering the implementation details together and separating them from the abstraction as an example placing class function definitions in a separate file from the class declaration. 
