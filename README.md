@@ -22,16 +22,27 @@ Data members usually go into the private section. The function members go into t
 *Define a class to represent a bank account.
 
 class Bank_Account
+
 {
+
 private: 
+
 string client_name;
+
 string account_number;
+
 double balance;
+
 public :
+
 void banck_account();
+
 void account_information();
+
 void deposite(double d);
+
 void withdraw(double w);
+
 }
 
 * When are class constructors called? When are class destructors called?
