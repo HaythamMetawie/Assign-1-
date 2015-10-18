@@ -35,7 +35,9 @@ double balance;
 
 public :
 
-void banck_account();
+ banck_account();
+ 
+ banck_account(string client_name= "Haytham Tareq", string account_name= "33854", double balance= 10000.0);
 
 void account_information();
 
