@@ -31,9 +31,9 @@ private:
 
      string account_number;
 
-     double balance;
-
 public :
+
+     double balance;
 
      Bank_Account();
  
@@ -41,9 +41,9 @@ public :
 
      void account_information();
 
-     void deposite(double d);
+     double deposite(double d);
 
-     void withdraw(double w);
+     double withdraw(double w);
 
 }
 
