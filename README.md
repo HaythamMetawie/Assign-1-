@@ -35,7 +35,7 @@ public :
 
      double balance;
 
-     Bank_Account();
+     Bank_Account(); // default constructor
  
      Bank_Account(string client_name= "Haytham Tareq", string account_name= "33854", double balance= 10000.0);
 
