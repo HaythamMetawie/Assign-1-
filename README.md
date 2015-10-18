@@ -19,7 +19,7 @@ The object is an instance of a class. The class defines the behavior of the obje
 
 Data members usually go into the private section. The function members go into the public section.
 
-*Define a class to represent a bank account.
+* Define a class to represent a bank account.
 
 class Bank_Account
 
