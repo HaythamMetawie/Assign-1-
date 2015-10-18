@@ -27,23 +27,23 @@ class Bank_Account
 
 private: 
 
-string client_name;
+     string client_name;
 
-string account_number;
+     string account_number;
 
-double balance;
+     double balance;
 
 public :
 
- banck_account();
+     banck_account();
  
- banck_account(string client_name= "Haytham Tareq", string account_name= "33854", double balance= 10000.0);
+     banck_account(string client_name= "Haytham Tareq", string account_name= "33854", double balance= 10000.0);
 
-void account_information();
+     void account_information();
 
-void deposite(double d);
+     void deposite(double d);
 
-void withdraw(double w);
+     void withdraw(double w);
 
 }
 
