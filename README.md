@@ -35,9 +35,9 @@ private:
 
 public :
 
-     banck_account();
+     Bank_Account();
  
-     banck_account(string client_name= "Haytham Tareq", string account_name= "33854", double balance= 10000.0);
+     Bank_Account(string client_name= "Haytham Tareq", string account_name= "33854", double balance= 10000.0);
 
      void account_information();
 
@@ -55,10 +55,8 @@ When a program creat a temporary object to carry out certain operations, the pro
 
 * Provide a code for a constructor for the bank account class in Question 5.
 
-     banck_account(); //default constractor
+  Bank_Account(); //default constractor
  
-     banck_account(string client_name= "Haytham Tareq", string account_name= "33854", double balance= 10000.0); //initialization
-
 * What is a default constructor?What is the advantage of having one?
 
 A default constractor is a constructor that is used to creat an object when you don't provide explicit initialization values. With a default constructor there is no need to explicitly any initialization routines.If you fail to provide any constructors, the compiler defines a default constructor for you.
