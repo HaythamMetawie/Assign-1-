@@ -52,6 +52,13 @@ public :
 Constructors is called to creat an object.It prepares the new object for use often accepting arguments that the constructor uses to set the required member variables.
 When a program creat a temporary object to carry out certain operations, the program automatically calles the destructor  for the object when it has finished using it for examples: If you create a static storage class object its destructor is called automatically when the program terminates.If you create an automatic storage class object its destructor is called automatically when the program exists the block of code in which the object is defined.
 
+
+* Provide a code for a constructor for the bank account class in Question 5.
+
+     banck_account(); //default constractor
+ 
+     banck_account(string client_name= "Haytham Tareq", string account_name= "33854", double balance= 10000.0); //initialization
+
 * What is a default constructor?What is the advantage of having one?
 
 A default constractor is a constructor that is used to creat an object when you don't provide explicit initialization values. With a default constructor there is no need to explicitly any initialization routines.If you fail to provide any constructors, the compiler defines a default constructor for you.
