@@ -28,7 +28,7 @@ string Bank_Account::getnumber(){ return account_number; }
 double Bank_Account::getbalance(){ return balance; }
 
 void Bank_Account::account_information()
-
+{
 	cout << "Client Name :" << client_name << endl;
 	cout << "Account Number :" << account_number << endl;
 	cout << "Your Blanace :" << balance << endl;
@@ -52,6 +52,9 @@ double Bank_Account::withdraw(double w)
 }
 int main()
 {
-	Bank_Account X;
+	Bank_Account X("Haytham Metawie", "33854", 10000.0);
+	X.account_information();
+	X.deposite(1000.0);
+	X.withdraw(250.0);
 	X.account_information();
 }
