@@ -21,38 +21,44 @@ Data members usually go into the private section. The function members go into t
 
 * Define a class to represent a bank account.
 
-class Bank_Account
-
-{
-
-private: 
-
-     string client_name;
-
-     string account_number;
-
-public :
-
-     double balance;
-
-     Bank_Account(); // default constructor
- 
-     Bank_Account(string client_name, double balance);
-     
-     Account_Number();
-
-     void account_information();
-
-     double deposite(double d);
-
-     double withdraw(double w);
-
-}
 
 * When are class constructors called? When are class destructors called?
 
 Constructors is called to creat an object.It prepares the new object for use often accepting arguments that the constructor uses to set the required member variables.
 When a program creat a temporary object to carry out certain operations, the program automatically calles the destructor  for the object when it has finished using it for examples: If you create a static storage class object its destructor is called automatically when the program terminates.If you create an automatic storage class object its destructor is called automatically when the program exists the block of code in which the object is defined.
+
+class Bank_Account
+
+{
+
+private:
+
+	string client_name;
+	
+	string account_number;
+	
+	double balance;
+	
+public:
+
+	Bank_Account();
+	
+	
+	Bank_Account(string client_name, string account_number, double balance);
+	
+	string getname();
+	
+	string getnumber();
+	
+	double getbalance();
+	
+	void account_information();
+	
+	double deposite(double d);
+	
+	double withdraw(double w);
+
+};
 
 
 * Provide a code for a constructor for the bank account class in Question 5.
