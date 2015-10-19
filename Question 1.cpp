@@ -9,24 +9,32 @@ private:
 	double balance;
 public:
 	Bank_Account();
-	Bank_Account(string client_name, double balance);
+	Bank_Account(string client_name, string account_number, double balance);
+	string getname();
+	string getnumber();
+	double getbalance();
 	void account_information();
 	double deposite(double d);
 	double withdraw(double w);
 };
-void Bank_Account::Bank_Account(string client_name, double b = 10000.0)
+  Bank_Account::Bank_Account(string name, string number , double b = 10000.0)
 {
-	string client_name;
-	cin >> client_name;
+	client_name = name;
+	account_number = number;
+	balance = b;
 }
+string Bank_Account::getname() { return client_name; }
+string Bank_Account::getnumber(){ return account_number; }
+double Bank_Account::getbalance(){ return balance; }
+
 void Bank_Account::account_information()
-{
+
 	cout << "Client Name :" << client_name << endl;
+	cout << "Account Number :" << account_number << endl;
 	cout << "Your Blanace :" << balance << endl;
 }
 double Bank_Account::deposite(double d)
 {
-	double deposite = d;
 	balance += d;
 	return balance;
 }
@@ -38,20 +46,12 @@ double Bank_Account::withdraw(double w)
 	}
 	else
 	{
-		double withdraw = w;
 		balance -= w;
 		return balance;
 	}
 }
 int main()
 {
-	cout << "Enter your Name :" << endl;
 	Bank_Account X;
-	cout << "Enter your deposite amount :" << endl;
-	X.deposite(double d);
-	cout << "Enter your withdrawal amount :" << endl;
-	X.withdraw(double w);
 	X.account_information();
-
-
 }
